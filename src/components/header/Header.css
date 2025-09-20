@@ -1,0 +1,178 @@
+.gaming-header {
+  position: relative;
+  width: 100%;
+  padding: 32px 0;
+  background-color: #11191f;
+  box-shadow: 0 0 15px #11191f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding-left: 0vw;
+  margin-left: -15%;
+  margin-right: 11%;
+  gap: 20px;
+  img{
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #00c8ff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons a {
+  color: #fff;
+  margin: 0 12px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.nav-buttons a:hover {
+  border: 2px solid #00c8ff;
+  background-color: #1f1f1f;
+  color: #00c8ff;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.menu-toggle span {
+  height: 4px;
+  width: 28px;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* ...existing code... */
+
+/* Responsive para pantallas grandes (29-32 pulgadas, ~2560px o más) */
+@media (min-width: 1800px) {
+  .gaming-header {
+    padding: 48px 0;
+    font-size: 1.4rem;
+  }
+  .logo-container {
+    margin-left: -8%;
+    margin-right: 18%;
+    gap: 40px;
+  }
+  .logo {
+    width: 120px;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .nav-buttons a {
+    font-size: 1.5rem;
+    padding: 18px 36px;
+  }
+}
+
+/* Responsive para tablets (768px a 1200px) */
+@media (max-width: 1200px) and (min-width: 768px) {
+  .gaming-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 24px;
+  }
+  .logo-container {
+    gap: 12px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .nav-buttons {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .nav-buttons a {
+    font-size: 1rem;
+    padding: 10px 14px;
+    margin: 0 4px;
+  }
+}
+
+/* Responsive para móviles (menos de 768px) */
+@media (max-width: 767px) {
+  .gaming-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 10px;
+  }
+  .logo-container {
+    gap: 6px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .nav-buttons {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 8px;
+    gap: 0;
+  }
+  .nav-buttons.open {
+    display: flex;
+  }
+  .nav-buttons a {
+    margin: 6px 0;
+    width: 100%;
+    text-align: left;
+    padding: 10px 8px;
+    font-size: 0.95rem;
+  }
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+}
