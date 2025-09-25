@@ -6,8 +6,7 @@ function Home() {
 
     return (
         <>
-        <Header
-         /> 
+        <Header/> 
             <div className="hero">
                 <div className="badge">⚡ Hosting de Nueva Generación</div>
 

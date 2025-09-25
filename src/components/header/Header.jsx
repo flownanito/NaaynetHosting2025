@@ -19,8 +19,8 @@ function Header() {
       </div>
       <nav className={`nav-buttons${menuOpen ? " open" : ""}`}>
         <a href="/Home" onClick={() => setMenuOpen(false)}>Inicio</a>
-        <a href="/Shop" onClick={() => setMenuOpen(false)}>Nosotros</a>
-        <a href="/We" onClick={() => setMenuOpen(false)}>Planes</a>
+        <a href="/Shop" onClick={() => setMenuOpen(false)}>Planes</a>
+        <a href="/We" onClick={() => setMenuOpen(false)}>Nosotros</a>
         <a href="https://discord.gg/GP75PPYf" onClick={() => setMenuOpen(false)}>Discord</a>
       </nav>
     </header>
